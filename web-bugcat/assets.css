@@ -1,0 +1,236 @@
+@font-face {
+    font-family: gluten;
+    src: url(Gluten-Regular.ttf);
+}
+* {
+    font-family: gluten;
+}
+
+body {
+    background-image: url("images/background.png");
+    font-family: gluten;
+    overflow: hidden;
+}
+.bugcat,
+.gallery,
+.header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    margin-top: 25px;
+}
+.header {
+    flex-direction: row;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.bugcat a,
+.gallery a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    margin: auto;
+    background-color: rgb(101, 211, 255);
+    border-radius: 16px;
+    width: 400px;
+    height: 50px;
+    font-size: 35px;
+    transition: 0.2s;
+}
+.bugcat a.homelink,
+.gallery a.homelink {
+    background-color: rgb(230, 225, 225);
+}
+.galleryimg a {
+    all: unset;
+}
+
+.header img {
+    padding-top: 16px;
+    width: 100px;
+    height: 65px;
+}
+.bugcat img {
+    margin: auto;
+    width: 500px;
+    height: 400px;
+}
+.bugcat img.tableimg {
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    height: 25px;
+}
+
+.galleryimg {
+    margin: auto;
+}
+.br {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+}
+
+.img {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border: solid 7px rgb(101, 211, 255);
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bugcat table,
+th,
+td {
+    border: solid rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    font-size: 32px;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.bugcat th {
+    border: solid rgba(0, 0, 0, 0.25);
+    border-top: none;
+}
+.bugcat td {
+    border-left: solid rgb(101, 211, 255);
+    border-bottom: solid rgb(101, 211, 255);
+    border-right: solid rgb(101, 211, 255);
+    border-top: none;
+}
+
+.ddcontent {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 20px;
+    flex-direction: column;
+    width: 232px;
+}
+.emotiondd {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    height: fit-content;
+}
+.emotiondd button {
+    border: none;
+    background-color: rgb(101, 211, 255);
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    width: 270px;
+    height: 50px;
+}
+.ddcontent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s;
+    width: auto;
+    height: 60px;
+    font-size: 30px;
+}
+.emotiondd:hover .ddcontent {
+    display: block;
+}
+
+.bugcat a:hover,
+/* .gallery a:hover, */
+.img:hover,
+.ddcontent a:hover {
+    transform: scale(1.1);
+}
+.bugcat a.eastera {
+    all: unset;
+    animation: light 0.4s infinite;
+}
+@keyframes light {
+    0% {
+        color: rgb(55, 158, 255);
+    }
+    50% {
+        color: rgb(255, 126, 148);
+    }
+    100% {
+        color: rgb(191, 255, 94);
+    }
+}
+
+.easter {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    padding: 0px;
+    overflow: hidden;
+    gap: 200px;
+    right: 150px;
+    margin: auto;
+}
+.easter span {
+    top: 0px;
+    padding: 0px;
+}
+.easter span.default {
+    padding-top: 300px;
+}
+.easter img {
+    display: flex;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.bugcat a.eastera:hover .easter {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    animation: fall 5s both;
+}
+@keyframes fall {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 200vh;
+    }
+}
