@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sākumlapa</title>
+<style>
+    *{
+        font-family: verdana;
+    }
+    body {
+        padding-top: 100px;
+    }
+    .saites,
+    .links,
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(74, 89, 133);
+        max-width: 1000px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+    .saites h1, p{
+        font-size: 50px;
+        color: white;
+    }
+    .saites p {
+        font-size: 20px;
+    }
+    .saites 
+    .content {
+        flex-direction: row;
+        gap: 60px;
+    }
+    .img,
+    .img img {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 300px;
+        width: 420px;
+        border-radius: 15px;
+    }
+    .links a.link {
+        margin: auto;
+        text-decoration: none;
+        background-color: rgb(226, 226, 226);
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        height: 30px;
+        font-size: 20px;
+
+    }
+    .saites a.link:hover {
+        transform: scale(1.1);
+    }
+   
+</style>
+</head>
+<body>
+
+
+<div class="saites">
+
+  <div class="head">
+     <h1>Par pilsētu</h1>
+     <p>Stambula (turku: İstanbul) pēc iedzīvotāju skaita ir lielākā pilsēta Eiropā.</p>
+  </div>
+
+  <div class="content">
+
+   <div class="img">
+    <a class="img" href="Centrs.jpg"><img src="Centrs.jpg" alt="Karte" ></a>
+   </div>
+
+   <div class="links">
+    <a class="link" href="Geo.html">Ģeogrāfiskais stāvoklis</a>
+    <a class="link" href="Klimats.html">Klimats</a>
+    <a class="link" href="Objekti.html">Tūrisma objekti</a>
+    <a class="link" href="vesture.html">Vēsture</a>
+    <a class="link" href="dati.html">Dati par iedzīvotājiem</a>
+    <a class="link" href="http://howtoistanbul.com">Officiālā Istambulas mājaslapa</a>
+   </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
