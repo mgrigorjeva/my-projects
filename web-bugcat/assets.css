@@ -177,7 +177,7 @@ td {
 .ddcontent a:hover {
     transform: scale(1.1);
 }
-.bugcat a.eastera {
+.bugcat span.easterSpan {
     all: unset;
     animation: light 0.4s infinite;
 }
@@ -204,7 +204,7 @@ td {
     margin: auto;
 }
 .easter span {
-    top: 0px;
+    margin-top: -150px;
     padding: 0px;
 }
 .easter span.default {
@@ -217,14 +217,14 @@ td {
     height: 100px;
 }
 
-.bugcat a.eastera:hover .easter {
+.show {
     display: flex;
     flex-direction: row;
     margin: auto;
     position: absolute;
     align-items: center;
     justify-content: center;
-    animation: fall 5s both;
+    animation: fall 4s both;
 }
 @keyframes fall {
     from {
