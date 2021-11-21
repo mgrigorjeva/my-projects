@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets.css"> 
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="background">
+        <span id="result">Select elements</span>
+        <hr />
+        <div class="mixer">
+            <button class="choice" onclick="dropdown0(this)" id="button0">First element</button>
+            <div class="elements" id="dropdown0">
+                <button
+                    onclick="addElement(this)"
+                    data-element="pyro"
+                    data-mixeridx="0"
+                >
+                  Pyro
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="hydro"
+                    data-mixeridx="0"
+                >
+                    Hydro
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="cryo"
+                    data-mixeridx="0"
+                >
+                    Cryo
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="electro"
+                    data-mixeridx="0"
+                >
+                    Electro
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="anemo"
+                    data-mixeridx="0"
+                >
+                    Anemo
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="geo"
+                    data-mixeridx="0"
+                >
+                    Geo
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="dendro"
+                    data-mixeridx="0"
+                >
+                    Dendro
+                </button>
+            </div>
+            <button class="choice" onclick="dropdown1(this)" id="button1">Second element</button>
+            <div class="elements" id="dropdown1">
+                <button
+                onclick="addElement(this)"
+                data-element="pyro"
+                data-mixeridx="1"
+            >
+                Pyro
+                </button>
+                <button
+                onclick="addElement(this)"
+                data-element="hydro"
+                data-mixeridx="1"
+            >
+                Hydro
+                </button>
+                <button
+                onclick="addElement(this)"
+                data-element="cryo"
+                data-mixeridx="1"
+            >
+                Cryo
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="electro"
+                    data-mixeridx="1"
+                >
+                    Electro
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="anemo"
+                    data-mixeridx="1"
+                >
+                    Anemo
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="geo"
+                    data-mixeridx="1"
+                >
+                    Geo
+                </button>
+                <button
+                    onclick="addElement(this)"
+                    data-element="dendro"
+                    data-mixeridx="1"
+                >
+                    Dendro
+                </button>
+            </div>
+        </div>
+    </div>
+        <script src="./scripts.js">
+          
+        </script>
+    </body>
+</html>
